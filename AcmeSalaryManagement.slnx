@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="AcmeSalary.Api/AcmeSalary.Api.csproj" />
+  <Project Path="AcmeSalary.Tests/AcmeSalary.Tests.csproj" />
+</Solution>

@@ -1,0 +1,29 @@
+# .NET build output
+**/bin/
+**/obj/
+
+# SQLite databases
+**/*.db
+**/*.db-shm
+**/*.db-wal
+
+# Frontend dependencies and build output
+**/node_modules/
+**/dist/
+
+# Environment variables and local secrets
+.env
+.env.*
+!.env.example
+
+# IDE and editor files
+.vs/
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

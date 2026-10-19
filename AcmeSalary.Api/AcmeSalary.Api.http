@@ -1,0 +1,59 @@
+
+@AcmeSalary.Api_HostAddress = http://localhost:5185
+
+### Get all employees
+GET {{AcmeSalary.Api_HostAddress}}/api/employees
+Accept: application/json
+### Get employee by ID
+GET {{AcmeSalary.Api_HostAddress}}/api/employees/1
+Accept: application/json
+### Create an employee
+POST {{AcmeSalary.Api_HostAddress}}/api/employees
+Content-Type: application/json
+
+{
+  "name": "Rahul Sharma",
+  "email": "rahul.sharma@example.com",
+  "department": "IT",
+  "basicSalary": 50000
+}
+
+### Update an employee
+PUT http://localhost:5185/api/employees/6
+Content-Type: application/json
+
+{
+  "name": "Rahul Sharma",
+  "email": "rahul.sharma@example.com",
+  "department": "Engineering",
+  "basicSalary": 60000
+}
+
+### Delete an employee
+DELETE http://localhost:5185/api/employees/6
+
+### Test validation - invalid employee
+POST http://localhost:5185/api/employees
+Content-Type: application/json
+
+{
+  "name": "",
+  "email": "not-an-email",
+  "department": "",
+  "basicSalary": -5000
+}
+
+### Test validation - valid employee
+POST http://localhost:5185/api/employees
+Content-Type: application/json
+
+{
+  "name": "Priya Sharma",
+  "email": "priya.sharma@example.com",
+  "department": "IT",
+  "basicSalary": 55000
+}
+
+### Get salary details for employee ID 1
+GET http://localhost:5185/api/salary/7
+Accept: application/json
