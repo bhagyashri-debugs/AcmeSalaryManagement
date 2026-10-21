@@ -60,7 +60,7 @@ Install the following before running the application:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/bhagyashri-debuggs/AcmeSalaryManagement.git
+git clone https://github.com/bhagyashri-debugs/AcmeSalaryManagement.git
 cd AcmeSalaryManagement
 ```
 
