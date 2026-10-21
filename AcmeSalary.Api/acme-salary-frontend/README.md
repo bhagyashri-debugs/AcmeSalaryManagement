@@ -138,3 +138,4 @@ GitHub: https://github.com/bhagyashri-debugs/AcmeSalaryManagement
 - Ensure the frontend API URL matches the backend URL.
 - Salary values should be interpreted together with their currency; amounts in different currencies should not be combined into a single total without conversion.
 - This project is intended as an employee and salary management application.
+
